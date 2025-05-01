@@ -6,7 +6,7 @@ import starlightThemeRapide from 'starlight-theme-rapide';
 // https://astro.build/config
 export default defineConfig({
 	site: 'https://pradanaadn.github.io',
-    base: '/',
+    base: '/docs',
 	integrations: [
 		starlight({
 			title: 'Pradana Adnyana',
