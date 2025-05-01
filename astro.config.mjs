@@ -6,12 +6,15 @@ import starlightThemeRapide from 'starlight-theme-rapide';
 // https://astro.build/config
 export default defineConfig({
 	site: 'https://pradanaadn.github.io',
-    base: '/docs',
+    base: '/',
 	integrations: [
 		starlight({
 			title: 'My Docs',
 			social: [{ icon: 'github', label: 'GitHub', href: 'https://github.com/pradanaadn/docs' }],
 			plugins: [starlightThemeRapide()],
+			customCss: [
+                './src/styles/custom.css',
+            ],
 			sidebar: [
 				{
 					label: 'Guides',
