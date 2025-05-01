@@ -9,7 +9,7 @@ export default defineConfig({
     base: '/',
 	integrations: [
 		starlight({
-			title: 'My Docs',
+			title: 'Pradana Adnyana',
 			social: [{ icon: 'github', label: 'GitHub', href: 'https://github.com/pradanaadn/docs' }],
 			plugins: [starlightThemeRapide()],
 			customCss: [
