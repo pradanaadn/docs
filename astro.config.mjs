@@ -26,6 +26,16 @@ export default defineConfig({
 					autogenerate: { directory: 'tutorials' },
 				},
 			],
+			head: [
+                {
+
+                    tag: 'meta',
+                    attrs: {
+                        name: 'google-site-verification',
+                        content: '9xlSg2YNj-bBORDdhCIUGs3sgKcbeyNiNy7GCK0J9I'
+                    }
+                }
+            ],
 		}),
 	],
 });
