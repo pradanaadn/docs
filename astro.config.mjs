@@ -19,11 +19,11 @@ export default defineConfig({
 			sidebar: [
 				{
 					label: 'Notes',
-					autogenerate: { directory: 'notes' }
+					items: [{ autogenerate: { directory: 'notes' } }],
 				},
 				{
 					label: 'Tutorial',
-					autogenerate: { directory: 'tutorials' },
+					items: [{ autogenerate: { directory: 'tutorials' } }],
 				},
 			],
 			head: [
