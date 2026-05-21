@@ -1,3 +1,4 @@
+import type { APIRoute } from 'astro';
 import { getCollection } from 'astro:content';
 
 function getSiteBaseUrl(site: URL | undefined) {
@@ -9,7 +10,7 @@ function toAbsoluteUrl(baseUrl: URL, path: string) {
 	return new URL(path, baseUrl).href;
 }
 
-export async function GET({ site }) {
+export const GET: APIRoute = async ({ site }) => {
 	const baseUrl = getSiteBaseUrl(site);
 	const docs = await getCollection('docs');
 	const urls = [
@@ -27,4 +28,4 @@ ${urls.map((url) => `  <url><loc>${url}</loc></url>`).join('\n')}
 			'Content-Type': 'application/xml; charset=utf-8',
 		},
 	});
-}
+};
